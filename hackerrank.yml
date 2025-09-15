@@ -1,0 +1,17 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  readonly_paths:
+    - test/*
+    - cypress/*
+    - .github/*
+  scoring:
+    command: yarn test:run
+    files: []
+  ide_config:
+    default_open_files:
+      - app/TariffWizard.vue
+    project_menu:
+      run: yarn preview
+      install: yarn install
+      test: yarn test:run
